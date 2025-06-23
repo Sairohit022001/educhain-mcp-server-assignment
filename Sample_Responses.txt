@@ -1,0 +1,130 @@
+--- EduChain MCP Server Sample Commands and Responses ---
+
+
+Server Base URL: http://127.0.0.1:8000
+
+
+User Command: "Generate 5 multiple-choice questions on Python loops."
+
+Server Endpoint: POST http://127.0.0.1:8000/tools/generate_mcqs
+
+Request Payload: {
+  "topic": "Python loops",
+  "num_questions": 5
+}
+
+Server Response (MCQs):
+{
+  "mcqs": [
+    {
+      "question": "What is a key concept in Python loops (Question 1)?",
+      "options": {
+        "A": "Option A for Python loops 1",
+        "B": "Option B for Python loops 1",
+        "C": "Option C for Python loops 1",
+        "D": "Option D for Python loops 1"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "question": "What is a key concept in Python loops (Question 2)?",
+      "options": {
+        "A": "Option A for Python loops 2",
+        "B": "Option B for Python loops 2",
+        "C": "Option C for Python loops 2",
+        "D": "Option D for Python loops 2"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "question": "What is a key concept in Python loops (Question 3)?",
+      "options": {
+        "A": "Option A for Python loops 3",
+        "B": "Option B for Python loops 3",
+        "C": "Option C for Python loops 3",
+        "D": "Option D for Python loops 3"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "question": "What is a key concept in Python loops (Question 4)?",
+      "options": {
+        "A": "Option A for Python loops 4",
+        "B": "Option B for Python loops 4",
+        "C": "Option C for Python loops 4",
+        "D": "Option D for Python loops 4"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "question": "What is a key concept in Python loops (Question 5)?",
+      "options": {
+        "A": "Option A for Python loops 5",
+        "B": "Option B for Python loops 5",
+        "C": "Option C for Python loops 5",
+        "D": "Option D for Python loops 5"
+      },
+      "correct_answer": "A"
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+
+User Command: "Provide a lesson plan for teaching algebra."
+
+Server Endpoint: GET http://127.0.0.1:8000/resources/lesson_plan?subject=algebra
+
+Server Response (Lesson Plan):
+{
+  "lesson_plan": {
+    "subject": "algebra",
+    "objective": "Students will be able to understand the basic concepts of algebra.",
+    "materials": [
+      "Whiteboard",
+      "Markers",
+      "Textbook for {subject}",
+      "Worksheets"
+    ],
+    "introduction": "Begin with an engaging question about algebra or a real-world example.",
+    "main_activities": [
+      "Activity 1: Explain core theories of algebra.",
+      "Activity 2: Group discussion on practical applications.",
+      "Activity 3: Problem-solving exercises related to {subject}."
+    ],
+    "assessment": "Short quiz or assignment at the end of the lesson.",
+    "conclusion": "Summarize key takeaways and preview the next topic in algebra."
+  }
+}
+
+--------------------------------------------------------------------------------
+
+User Command: "Generate 3 flashcards on Calculus concepts."
+
+Server Endpoint: POST http://127.0.0.1:8000/tools/generate_flashcards
+
+Request Payload: {
+  "topic": "Calculus concepts",
+  "num_cards": 3
+}
+
+Server Response (Flashcards):
+{
+  "flashcards": [
+    {
+      "front": "Term 1 in Calculus concepts",
+      "back": "Definition for Term 1 in Calculus concepts"
+    },
+    {
+      "front": "Term 2 in Calculus concepts",
+      "back": "Definition for Term 2 in Calculus concepts"
+    },
+    {
+      "front": "Term 3 in Calculus concepts",
+      "back": "Definition for Term 3 in Calculus concepts"
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+

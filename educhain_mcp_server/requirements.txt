@@ -1,0 +1,10 @@
+fastapi[all]
+uvicorn
+python-multipart
+# Add educhain here if it's pip installable:
+# educhain
+# If using a local LLM like Ollama, install:
+ollama
+# If using OpenAI:
+openai
+langchain

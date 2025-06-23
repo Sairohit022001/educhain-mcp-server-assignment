@@ -1,0 +1,11 @@
+{
+  "mcp_servers": [
+    {
+      "name": "EduChain MCP Server",
+      "base_url": "http://127.0.0.1:8000",
+      "description": "Connects to the EduChain content generation server.",
+      "tools_path": "/.well-known/mcp/tools",
+      "resources_path": "/.well-known/mcp/resources"
+    }
+  ]
+}
