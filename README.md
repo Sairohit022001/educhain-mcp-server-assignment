@@ -66,7 +66,7 @@ educhain_mcp_server/
 ### 1. Clone the Repository
 
 ```bash
-git clone [YOUR_GITHUB_REPO_URL_HERE]
+git clone [https://github.com/Sairohit022001/educhain-mcp-server-assignment]
 cd educhain_mcp_server
 
 
